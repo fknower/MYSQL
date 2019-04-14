@@ -31,6 +31,10 @@ values ("jetson,7),
 (peanut,2),
 (butter,4);
 
-show warnings                       Shows warnings.
+show warnings;                       Shows warnings.
+
+create table cats2                    Prevents empty rows from being inserted into the table.
+(name varchar(100) not null,
+age int not null);
 
 
