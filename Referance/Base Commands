@@ -31,4 +31,6 @@ values ("jetson,7),
 (peanut,2),
 (butter,4);
 
+show warnings                       Shows warnings.
+
 
