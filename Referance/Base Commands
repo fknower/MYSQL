@@ -1,6 +1,6 @@
 create database hello_world_db;        create a database called hello world
 show database;                         displays all databases on the system
-drop hello_world_db;                   deletes hello_world_db
+drop database hello_world_db;                   deletes hello_world_db
 
 use hello_world_db;                    selects hello_world_db to work on.
 select database();                     shows the database that is currently being worked on.
