@@ -1,11 +1,21 @@
-create database hello_world_db;        create a database called hello world
-show database;                         displays all databases on the system
-drop database hello_world_db;                   deletes hello_world_db
+create database cats_app_db;          create a database called cats_app_db
+show database;                        displays all databases on the system
+drop database cats_app_db;;           deletes cats_app_db
 
-use hello_world_db;                    selects hello_world_db to work on.
-select database();                     shows the database that is currently being worked on.
+use cats_app_db;                      selects cats_app_db to work on.
+select database();                    shows the database that is currently being worked on.
 
 create table tablename (               Syntax for creating a table
 column_name data_type,
 column_name data_type
 );
+
+create table cats (                   Example table creation called cats
+name varchar(100),
+age int
+);
+
+show tables;                          Shows all the tables in the current database.
+
+show column from cats;                shows all the columns from cats.
+desc cats                             does the same thing
