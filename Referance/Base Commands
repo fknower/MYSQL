@@ -19,3 +19,6 @@ show tables;                          Shows all the tables in the current databa
 
 show column from cats;                shows all the columns from cats.
 desc cats                             does the same thing
+
+
+drop table cats                       deletes the cat table.
