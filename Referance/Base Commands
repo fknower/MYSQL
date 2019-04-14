@@ -1,0 +1,3 @@
+create database hello_world_db;        create a database called hello world
+show database;                         displays all databases on the system
+drop hello_world_db;                   deletes hello_world_db
