@@ -23,5 +23,12 @@ desc cats                             does the same thing
 
 drop table cats;                      deletes the cat table.
 
- insert into cats(name,age)           Enters data into table cats.
-    -> values ("jetson",7);
+insert into cats(name,age)           Enters data into table cats.
+values ("jetson",7);
+   
+inser into cats(name, age)           Enters multiple rows into table.
+values ("jetson,7),
+(peanut,2),
+(butter,4);
+
+
