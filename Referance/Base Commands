@@ -37,4 +37,8 @@ create table cats2                    Prevents empty rows from being inserted in
 (name varchar(100) not null,
 age int not null);
 
-
+create table cats4                    creates a table with default values
+(
+name varchar(100) not null default 'unnamed',
+age int not null default 99
+ );
