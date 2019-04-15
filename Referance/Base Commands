@@ -45,3 +45,10 @@ age int not null default 99
 primary key (cat_id)
  );
  
+ CREATE TABLE unique_cats2 (                       like above but primery key is automatically sorted.
+    cat_id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(100),
+    age INT,
+    PRIMARY KEY (cat_id)
+);
+ 
