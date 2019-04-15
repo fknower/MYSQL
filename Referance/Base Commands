@@ -39,7 +39,8 @@ age int not null);
 
 create table cats4                    creates a table with default values
 (
-name varchar(100) not null default 'unnamed',      creats a table with a primery key.
+car_id int not null,
+name varchar(100) not null default 'unnamed',      creats a table with a primery key of cat_id`s.
 age int not null default 99
 primary key (cat_id)
  );
