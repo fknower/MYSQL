@@ -22,8 +22,10 @@ select name,age from cats;                      displays name and age
 | Jackson        |    7 |
 +----------------+------+
 
-select * from `cats` where age=4;               The where is more targeted find. Will show ringo and egg.
-select * from cats where name='EGG';            This will display row 4. Note this is NOT case sensitive
-select name,age from cats;                      selects multiple columns
-select * from cats where cat_id = age;          selects one column equals another.
-select name as 'cat name' from cats;            Displays the column name as cat name. this does not change the column name.
+select * from `cats` where age=4;                   The where is more targeted find. Will show ringo and egg.
+select * from cats where name='EGG';                This will display row 4. Note this is NOT case sensitive
+select name,age from cats;                          selects multiple columns
+select * from cats where cat_id = age;              selects one column equals another.
+select name as 'cat name' from cats;                Displays the column name as cat name. this does not change the column name.
+SELECT name AS 'cat name',                          To do multiple display names.
+breed AS 'kitty breed' FROM cats;               
