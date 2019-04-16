@@ -13,3 +13,5 @@ select * from cats;
 
 update cats set breed='Shorthair' where breed='Tabby';                  changes tabby to shorthair.
 update cats set age=14 where name='Misty';                              changes misty age to 14.
+
+Rule of thumb :- before you do an update make sure you are targeting the correct data. Before doing an update run the equivalent select.
