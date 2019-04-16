@@ -1,6 +1,7 @@
 create database cats_app_db;          create a database called cats_app_db
 show database;                        displays all databases on the system
 drop database cats_app_db;;           deletes cats_app_db
+drop table shirts;                    deletes shirts table from the database.
 
 use cats_app_db;                      selects cats_app_db to work on.
 select database();                    shows the database that is currently being worked on.
