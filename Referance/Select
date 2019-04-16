@@ -26,4 +26,4 @@ select * from `cats` where age=4;               The where is more targeted find.
 select * from cats where name='EGG';            This will display row 4. Note this is NOT case sensitive
 select name,age from cats;                      selects multiple columns
 select * from cats where cat_id = age;          selects one column equals another.
-select cat_id as id from cats;                  Displays the column name as id.
+select name as 'cat name' from cats;            Displays the column name as cat name. this does not change the column name.
