@@ -12,3 +12,4 @@ select * from cats;
 +--------+----------------+------------+------+
 
 update cats set breed='Shorthair' where breed='Tabby';                  changes tabby to shorthair.
+update cats set age=14 where name='Misty';                              changes misty age to 14.
