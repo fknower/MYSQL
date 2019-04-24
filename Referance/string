@@ -1,3 +1,13 @@
-SELECT                                                                  Merges columns.
-  CONCAT(author_fname, ' ', author_lname)
+SELECT                                                                  Merges columns whith a space in the middle.
+  CONCAT(author_fname, ' ', author_lname)                               
 FROM books;
+
+SELECT                                                                  As above but with column header as full name.
+  CONCAT(author_fname, ' ', author_lname)
+  AS 'full name'
+FROM books;
+
+SELECT author_fname AS first, author_lname AS last,                     Displays first name and last name  with column header first and last
+  CONCAT(author_fname, ', ', author_lname) AS full                      and  merges first and lastnames into full name.
+FROM books;
+
