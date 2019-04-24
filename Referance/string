@@ -46,3 +46,8 @@ substring(title,1,10),'...')                                            the till
 as 'short title'                                                        renames the title header
 from books;
 
+select replace('hello world','hell','hevan');			  	replaces hell with hevan.
+
+select replace('hello world','l','7');					replace all l with 7. 'he77o wor7d'
+
+select replace(title,'e','3') from books;				replaces all e from the title column in books.
