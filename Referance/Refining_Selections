@@ -47,3 +47,14 @@ select title from books limit 3;                      shows the first 3 titles
 select title, released_year                           shows the fist 5 titles starting from record 0.
 from books limit 0,5;
 
+select title, author_fname                            shows all books where the firstname has a da in it. 
+from books
+where author_fname like '%da%';
+
+select title, stock_quantity                          the underscore matches 1 character, same as $ in reg exp.
+from books 
+where stock_quantity like '____';
+
+select title from books where title like '%\%%';      \ is an escape char so you can look for %
+
+
