@@ -24,11 +24,26 @@ select distinct author_lname from books;                outputs a table with all
                                                         Saunders
  
  select distinct                                        outputs of distinct first and last names.
-  concat(author_fname,author_lname)   
-  from books;                                           
+ concat(author_fname,author_lname)   
+ from books;                                           
   
-  select distinct author_fname,author_lname              does the same.
-  from books;
+ select distinct author_fname,author_lname             does the same.
+ from books;
   
-  
-                                                        
+ select author_lname from books                        sorts by lastname in assending order.
+ order by author_lname;
+ 
+select author_lname from books                         sorts by lastname in descending order.
+order by author_lname desc;
+
+select title, author_fname, author_lname               sorts by firstname.
+from books order by 2;
+
+select author_lname from books                        sorts by lastname than by firstname.
+order by author_lname, author_fname;
+
+select title from books limit 3;                      shows the first 3 titles
+
+select title, released_year                           shows the fist 5 titles starting from record 0.
+from books limit 0,5;
+
