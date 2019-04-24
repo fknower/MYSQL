@@ -55,3 +55,7 @@ select replace(title,'e','3') from books;				replaces all e from the title colum
 SELECT									combines replace with another string function.
     SUBSTRING(REPLACE(title, 'e', '3'), 1, 10) AS 'weird string'
 FROM books;
+
+select reverse('hello world');						'dlrow olleh'
+
+
