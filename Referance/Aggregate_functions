@@ -67,7 +67,7 @@ select sum(pages) from books;                                    returns 632.
 select author_fname, author_lname, sum(pages)                    sums the group rows. returns a table.
 from books group by author_fname, author_lname;
 
-
+select avg(pages) from books;                                     returns average. prety much works the same as the above.
 
 
 
