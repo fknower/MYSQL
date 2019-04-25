@@ -28,3 +28,48 @@ select count(distinct author_fname) from books;                   returns 12. Th
 
 select count(distinct author_fname,author_lname) from books;      returns 12. the number of distinct first and last names.
 
+select count(*) from books where title like '%the%';              returns 6. the number of titles that contain 'the'. 
+
+select title,author_lname, count(*)                               shows the number of books each author has written.
+from books group by author_lname;                                 on its own group by show the wrong info.
+
+select title,author_lname, count(*)                               As above but uses first name and last name. this sort out the issue 
+from books group by author_fname, author_lname;                   with harris.
+
+select released_year, count(*) from books                         displays each release year and how many books that year.
+group by released_year;
+
+SELECT                                                           displays properly formated rows.
+CONCAT('In ', released_year, ' ', COUNT(*), ' book(s) released') 
+AS year FROM books GROUP BY released_year;
+
+select min(released_year) from books;                             displays 1945.
+
+select max(released_year) from books;                             displays 2017.
+
+Note MAX and Min are best used as a secondery selection as below :-
+
+select title, pages from books                                    returns The Amazing Adventures of Kavalier & Clay	634  
+where pages =(select Max(pages) from books);         
+
+select title, pages from books order by pages asc limit 1;        returns the same result as above but is quicker.
+
+select author_fname, author_lname, min(released_year)             example use case of using min.
+from books 
+group by author_fname, author_lname;
+
+select author_fname, author_lname, max(pages)                    example use case for max.
+from books 
+group by author_fname, author_lname;
+
+select sum(pages) from books;                                    returns 632.
+
+select author_fname, author_lname, sum(pages)                    sums the group rows. returns a table.
+from books group by author_fname, author_lname;
+
+
+
+
+
+
+
