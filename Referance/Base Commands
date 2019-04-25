@@ -1,3 +1,5 @@
+-- my comment                         comments for your code
+
 create database cats_app_db;          create a database called cats_app_db
 show database;                        displays all databases on the system
 drop database cats_app_db;;           deletes cats_app_db
