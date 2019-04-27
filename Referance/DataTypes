@@ -15,3 +15,9 @@ date                                                    yyyy-dd-mm
 time                                                    hh:mm:ss
 
 datetime                                                yyyy-dd-mm hh:mm:ss
+
+select curdate();                                       gives you the current date.
+
+select curtime();                                      gives you the current time.
+
+select now();                                           gives you the cruuent date and time.
