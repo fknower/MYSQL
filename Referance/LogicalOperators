@@ -24,3 +24,12 @@
  
  not like
  select title, released_year from books where title  not like '%w%';               example of not like.
+
+>                                                                                  greater than.
+
+<                                                                                  less than. same old same old.
+
+&&  and                                                                            ogical and. both '&&' and 'and' can be used. 
+
+
+
