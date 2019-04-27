@@ -25,6 +25,8 @@ select now();                                           gives you the cruuent da
  SELECT DATE_FORMAT                                     foramts to Sunday October 2009
  ('2009-10-04 22:23:00', '%W %M %Y');
  
+ select date_format(now(),'%d %m %y');                  returns day month and year
+ 
  
 select datediff(now(),'1969-01-27 00:00:00');           Number of days elasped from bday
 
