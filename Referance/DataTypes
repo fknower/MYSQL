@@ -46,4 +46,8 @@ created_st timestamp default now()
 REATE TABLE comments2 (                                 this creates a new timestamp for when things are updated.
     content VARCHAR(100),
     changed_at TIMESTAMP DEFAULT NOW() ON UPDATE NOW()
+    
 );
+
+
+NOTE :datetime v timestamp  timestamp works from 1970 to 2038 but takeup less storage space than. 
