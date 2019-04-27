@@ -31,6 +31,8 @@ select now();                                           gives you the cruuent da
  
  select date_format(now(),'%W');                        returns the day of the week eg monday
  
+ select date_format(now(),'%M %D % at% %h %:% %m');     returns month day at time eg April 27th  at 10 : 04
+ 
  
 select datediff(now(),'1969-01-27 00:00:00');           Number of days elasped from bday
 
