@@ -37,3 +37,10 @@ select now() - interval 7 day;                          removes 7 days
 select now() + interval 7 day                           can be chaned together                            
 + interval 3 month + interval 2 year;
 
+
+create table comments (                                timestamp datatype is used to store date time up to 2038
+contents varchar(100),
+created_st timestamp default now()
+);
+
+
