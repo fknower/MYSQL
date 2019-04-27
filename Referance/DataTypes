@@ -29,6 +29,8 @@ select now();                                           gives you the cruuent da
  
  select date_format(now(),'%w');                         returns day number of the week sunday 0 ... sat 6
  
+ select date_format(now(),'%W');                        returns the day of the week eg monday
+ 
  
 select datediff(now(),'1969-01-27 00:00:00');           Number of days elasped from bday
 
