@@ -29,5 +29,11 @@ select now();                                           gives you the cruuent da
 select datediff(now(),'1969-01-27 00:00:00');           Number of days elasped from bday
 
 select date_add(now(), interval 7 day);                 returns the date 7 days from now
+
 select now() + interval 7 day;                          does the same as above
+
 select now() - interval 7 day;                          removes 7 days
+
+select now() + interval 7 day                           can be chaned together                            
++ interval 3 month + interval 2 year;
+
