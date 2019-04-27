@@ -18,9 +18,12 @@ datetime                                                yyyy-dd-mm hh:mm:ss
 
 select curdate();                                       gives you the current date.
 
-select curtime();                                      gives you the current time.
+select curtime();                                       gives you the current time.
 
 select now();                                           gives you the cruuent date and time.
 
  SELECT DATE_FORMAT                                     foramts to Sunday October 2009
  ('2009-10-04 22:23:00', '%W %M %Y');
+ 
+ 
+select datediff(now(),'1969-01-27 00:00:00');           Number of days elasped from bday
