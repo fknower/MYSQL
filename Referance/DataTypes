@@ -1,0 +1,11 @@
+char(10)                                                basically a array of 10 char
+varchar(10)                                             variable sized up to 10 char.
+
+int                                                     whole number
+decimal(5.2)                                            a number up to 5 digits long and with 2 decimal places
+
+float                                                   stores large numbers with less space. However is stores an approximat value. 
+                                                        float has precision issues after 7 digits
+                                                        
+double                                                  stores larger numbers than float with double the mem space.
+                                                        However is stores an approximat value. Double has precision issues after 15 digits
