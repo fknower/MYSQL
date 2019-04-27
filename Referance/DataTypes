@@ -21,3 +21,6 @@ select curdate();                                       gives you the current da
 select curtime();                                      gives you the current time.
 
 select now();                                           gives you the cruuent date and time.
+
+ SELECT DATE_FORMAT                                     foramts to Sunday October 2009
+ ('2009-10-04 22:23:00', '%W %M %Y');
