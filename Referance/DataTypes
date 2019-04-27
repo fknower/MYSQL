@@ -9,3 +9,9 @@ float                                                   stores large numbers wit
                                                         
 double                                                  stores larger numbers than float with double the mem space.
                                                         However is stores an approximat value. Double has precision issues after 15 digits
+
+date                                                    yyyy-dd-mm
+
+time                                                    hh:mm:ss
+
+datetime                                                yyyy-dd-mm hh:mm:ss
