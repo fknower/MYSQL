@@ -54,4 +54,18 @@ primary key (cat_id)
     age INT,
     PRIMARY KEY (cat_id)
 );
+
+CREATE TABLE customers(                             example of a table that will be referanced by the below orders table
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(100),
+    last_name VARCHAR(100),
+    email VARCHAR(100)
+);
+CREATE TABLE orders(                               This table is referanced by the above customers table.
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    order_date DATE,
+    amount DECIMAL(8,2),
+    customer_id INT,
+    FOREIGN KEY(customer_id) REFERENCES customers(id)
+);
  
