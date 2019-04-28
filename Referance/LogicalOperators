@@ -75,5 +75,14 @@ case
     	from books;
     
     
+    
+select title,author_lname, 							Another example case
+case 
+	when title like '%stories%' then 'Short Stories'
+    when title = 'Just Kids' or title = 'A Heartbreaking Work of Staggering Genius' then 'Memoir'
+    else 'Novel'
+    end as 'Gener'
+from books;  
+    
     NOTE that there are no comma at the end of the when.
 
