@@ -84,5 +84,13 @@ case
     end as 'Gener'
 from books;  
     
+    select title,author_lname, 
+case
+when count(title) = 1 then concat(count(title),' Book')
+else concat(count(title),' Books')
+end as 'Count'
+from books group by author_lname;
+
+    
     NOTE that there are no comma at the end of the when.
 
