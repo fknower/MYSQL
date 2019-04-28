@@ -55,3 +55,14 @@ WHERE
     AND CAST('2000-01-01' AS DATETIME);
 
 
+In                                                                                this works like a chained  'or' operator.
+select title, author_lname from books                                             example statement.
+where author_lname in ('Carver','Lahiri','Smith');
+
+Not In                                                                            finds the oposit to in
+select title, author_lname from books                                             example statement.
+where author_lname not in ('Carver','Lahiri','Smith');
+
+
+
+
