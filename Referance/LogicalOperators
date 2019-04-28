@@ -33,4 +33,25 @@
 
 || or                                                                              logical or.
 
+Between                                                                            returns values between 2 values.
+select title, released_year from books                                             example between comand.
+where released_year between 2004 and 2015;
+
+Not between
+select title, released_year from books                                             not between example.
+where released_year not between 2004 and 2015;
+
+A note on using between for dates. Its is best to use the cast function on the data type to make sure you are working with the same type.
+
+cast                                                                               converts string or data type to another. 
+select cast('2019-4-28' as datetime);                                              returns 2019-04-28 00:00:00
+
+SELECT                                                                             better example using cast
+    name, 
+    birthdt 
+FROM people
+WHERE 
+    birthdt BETWEEN CAST('1980-01-01' AS DATETIME)
+    AND CAST('2000-01-01' AS DATETIME);
+
 
