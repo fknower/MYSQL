@@ -64,5 +64,12 @@ select title, author_lname from books                                           
 where author_lname not in ('Carver','Lahiri','Smith');
 
 
-
+case                                                                              works like a switch
+select title, stock_quantity,                                                     example statment
+case
+	when stock_quantity between 0 and 50 then '*'
+    when stock_quantity between 0 and 50 then '**'
+    else '***'
+    end as Stock
+    from books;
 
