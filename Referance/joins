@@ -21,3 +21,20 @@ customer_id	int(11)	YES	MUL
 4	2015-01-03	12.50	2
 5	1999-04-11	450.25	5
 
+SELECT * FROM customers, orders;                      Cross join example not very usefull as its messy.
+
+SELECT * FROM customers, orders                       Implicit inner join
+WHERE customers.id = orders.customer_id;                                                     
+
+SELECT first_name, last_name, order_date, amount      another inner join
+FROM customers, orders 
+    WHERE customers.id = orders.customer_id;
+
+SELECT * FROM customers                               Explicit inner join
+JOIN orders
+    ON customers.id = orders.customer_id;
+    
+SELECT first_name, last_name, order_date, amount       Another Explicit inner join
+FROM customers
+JOIN orders
+    ON customers.id = orders.customer_id;
