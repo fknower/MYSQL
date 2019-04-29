@@ -2,7 +2,8 @@ customers
 id	int(11)	NO	PRI		auto_increment
 first_name	varchar(100)	YES			
 last_name	varchar(100)	YES			
-email	varchar(100)	YES			
+email	varchar(100)	YES	
+
 1	Boy	George	george@gmail.com
 2	George	Michael	gm@gmail.com
 3	David	Bowie	david@gmail.com
@@ -23,6 +24,8 @@ customer_id	int(11)	YES	MUL
 
 SELECT * FROM customers, orders;                      Cross join example not very usefull as its messy.
 
+Inner Join                                            Stuff in customers that are also in orders.
+
 SELECT * FROM customers, orders                       Implicit inner join
 WHERE customers.id = orders.customer_id;                                                     
 
@@ -38,6 +41,9 @@ SELECT first_name, last_name, order_date, amount       Another Explicit inner jo
 FROM customers
 JOIN orders
     ON customers.id = orders.customer_id;
+    
+    
+Left Join                                              All stuff in customers and 
     
     
 SELECT * FROM customers                                 Example left join -- left join; joins from customers
