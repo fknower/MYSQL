@@ -59,7 +59,7 @@ LEFT JOIN orders
 GROUP BY customers.id
 ORDER BY total_spent;
 
-SELECT                                                  Example left join.
+SELECT                                                  Example left join. Using if null function.
     IFNULL(first_name,'MISSING') AS first, 
     IFNULL(last_name,'USER') as last, 
     order_date, 
