@@ -38,3 +38,23 @@ SELECT first_name, last_name, order_date, amount       Another Explicit inner jo
 FROM customers
 JOIN orders
     ON customers.id = orders.customer_id;
+    
+    
+SELECT * FROM customers                                 Example left join -- left join; joins from customers
+LEFT JOIN orders                                        Right join joins from orders
+    ON customers.id = orders.customer_id;
+   
+SELECT first_name, last_name, order_date, amount        Example of a left join
+FROM customers
+LEFT JOIN orders
+    ON customers.id = orders.customer_id; 
+    
+    SELECT                                              Example of a left join
+    first_name, 
+    last_name,
+    IFNULL(SUM(amount), 0) AS total_spent
+FROM customers
+LEFT JOIN orders
+    ON customers.id = orders.customer_id
+GROUP BY customers.id
+ORDER BY total_spent;
