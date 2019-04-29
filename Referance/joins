@@ -70,3 +70,4 @@ RIGHT JOIN orders
     ON customers.id = orders.customer_id
 GROUP BY first_name, last_name;
 
+Note on left and right joins. you can just switch customers with orders an get the same results as left and right joins.
