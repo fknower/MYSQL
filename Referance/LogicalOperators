@@ -93,4 +93,11 @@ from books group by author_lname;
 
     
     NOTE that there are no comma at the end of the when.
+    
+ IS NULL								Used in a where to test for null;
+ 
+ select title, rating from series 					example of 'is null' usage
+ left join reviews on series.id = reviews.series_id
+where rating is null;
+ 
 
