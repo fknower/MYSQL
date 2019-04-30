@@ -101,3 +101,6 @@ from books group by author_lname;
 where rating is null;
  
 
+if(count(reviews.rating) >=1, 'True', 'False')				example if
+
+
