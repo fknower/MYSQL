@@ -69,6 +69,8 @@ from books group by author_fname, author_lname;
 
 select avg(pages) from books;                                     returns average. prety much works the same as the above.
 
+select round(avg(pages),2) from books;                            returns average rounded to 2 decimal places.
+
 
 
 
