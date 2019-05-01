@@ -29,3 +29,5 @@ select * from cats where cat_id = age;              selects one column equals an
 select name as 'cat name' from cats;                Displays the column name as cat name. this does not change the column name.
 SELECT name AS 'cat name',                          To do multiple display names.
 breed AS 'kitty breed' FROM cats;               
+
+
