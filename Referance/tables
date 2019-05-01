@@ -1,5 +1,5 @@
 create table users (
 id int auto_increment primary key,
-username varchar(100) unique,                                                                 force thisto be unique
+username varchar(100) unique not null,                                                        force this to be unique and not empty
 creted_at timestamp now()                                                                     auto generate timestamp now
 ) ;
