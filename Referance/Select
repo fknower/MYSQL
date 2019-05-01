@@ -30,4 +30,7 @@ select name as 'cat name' from cats;                Displays the column name as 
 SELECT name AS 'cat name',                          To do multiple display names.
 breed AS 'kitty breed' FROM cats;               
 
-
+select date_format(created_at, '%W') as day,         counting group by days
+ count(*) as num from users
+group by day 
+order by num;
