@@ -1,0 +1,5 @@
+create table users (
+id int auto_increment primary key,
+username varchar(100) unique,                                                                 force thisto be unique
+creted_at timestamp now()                                                                     auto generate timestamp now
+) ;
