@@ -34,3 +34,5 @@ select date_format(created_at, '%W') as day,         counting group by days
  count(*) as num from users
 group by day 
 order by num;
+
+select (select count(*) from photos / select count(*) from users);         Example of using a subquery toget the avg of 2 tables
