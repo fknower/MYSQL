@@ -1,0 +1,28 @@
+table
+
+  email,                           created_at
+'Dorris61@gmail.com',             '2019-03-10 09:27:06'
+'Drake68@gmail.com',              '2018-07-22 21:24:11'
+'Dudley.Kessler94@hotmail.com',   '2018-07-13 07:48:47'
+'Dudley41@hotmail.com',           '2019-01-29 21:12:43'
+'Dulce_Watsica0@gmail.com',       '2018-07-05 13:58:56'
+'Dustin.Treutel24@hotmail.com',   '2019-01-01 08:00:08'
+'Eden84@hotmail.com',             '2018-06-21 19:10:29'
+'Eden_Mayer61@hotmail.com',       '2019-04-12 06:46:25'
+'Eden_Paucek45@yahoo.com',        '2018-10-16 12:18:55'
+'Edison_Ziemann@yahoo.com',       '2018-06-23 20:10:26'
+'Edna81@yahoo.com',               '2018-06-28 15:01:18'
+'Edyth_Brekke92@yahoo.com',       '2018-06-04 18:59:12'
+
+
+                                                                                        example of case usage
+SELECT CASE 
+         WHEN email LIKE '%@gmail.com' THEN 'gmail' 
+         WHEN email LIKE '%@yahoo.com' THEN 'yahoo' 
+         WHEN email LIKE '%@hotmail.com' THEN 'hotmail' 
+         ELSE 'other' 
+       end      AS provider, 
+       Count(*) AS total_users 
+FROM   users 
+GROUP  BY provider 
+ORDER  BY total_users DESC; 
