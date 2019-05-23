@@ -21,3 +21,16 @@ create trigger trigger_name
     end;
 $$
 delimiter ;
+
+
+delimiter $$
+
+create TRIGGER capture_unfollow
+	after delete on follows for each row
+    BEGIN
+		insert into unfollows(follower_id, followee_id)
+        values(OLD.follower_id,OLD.followee_id);
+    END;
+    $$
+    
+    delimiter :
