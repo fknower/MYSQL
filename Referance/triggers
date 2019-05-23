@@ -1,0 +1,12 @@
+                                                                            The below code stops any inserts that have age under 18
+DELIMITER $$
+CREATE TRIGGER MUST_BE_ADULT
+	before insert on users for each row
+    begin
+		if NEW.age < 18
+        then 
+			signal sqlstate '45000'
+				set MESSAGE_TEXT = 'Must be an adult';
+		end if;
+	end;
+$$
