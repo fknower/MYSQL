@@ -10,3 +10,14 @@ CREATE TRIGGER MUST_BE_ADULT
 		end if;
 	end;
 $$
+
+
+
+
+delimiter $$
+create trigger trigger_name
+	trigger_name trigger_event on table_name for each row
+    begin
+    end;
+$$
+delimiter ;
